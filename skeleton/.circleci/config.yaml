@@ -1,5 +1,4 @@
 version: 2.1
-
 jobs:
   analyze:
     docker:
@@ -9,15 +8,12 @@ jobs:
       - run:
           name: Analyze on SonarCloud
           command: mvn verify sonar:sonar
-
 executors:
   jdk:
     docker:
       - image: 'cimg/openjdk:21.0.2'
-
 orbs:
   maven: circleci/maven@1.4.1
-
 workflows:
   maven_test:
     jobs:

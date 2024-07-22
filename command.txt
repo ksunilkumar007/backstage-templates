@@ -1,0 +1,28 @@
+#Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+
+#Install node.js version 18
+nvm install 18
+node --version #v18.20.4 version displays
+npx --version #10.7.0 version displays
+
+#Install yarm
+npm install --global yarn
+
+skhobrag@Sunils-MacBook-Pro backstage % node --version
+v18.20.4
+skhobrag@Sunils-MacBook-Pro backstage % npx --version
+10.7.0
+skhobrag@Sunils-MacBook-Pro backstage % yarn --version
+1.22.22
+skhobrag@Sunils-MacBook-Pro backstage %
+
+# Create Tokens for GitHub, Sonarqube and CircleCi
+
+skhobrag@Sunils-MacBook-Pro backstage % export GITHUB_TOKEN=<YOUR_GITHUB_TOKEN>
+skhobrag@Sunils-MacBook-Pro backstage % export SONARCLOUD_TOKEN=<YOUR_SONARCLOUD_TOKEN>
+skhobrag@Sunils-MacBook-Pro backstage % export CIRCLECI_TOKEN=<YOUR_CIRCLECI_TOKEN>
+
+
+

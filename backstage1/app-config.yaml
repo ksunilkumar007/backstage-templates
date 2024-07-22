@@ -43,14 +43,15 @@ integrations:
     #   apiBaseUrl: https://ghe.example.net/api/v3
     #   token: ${GHE_TOKEN}
   sonarqube:
-    baseUrl: https://sonarcloud.io
-    piKey: ${SONARCLOUD_TOKEN}
+    baseURL: https://sonarcloud.io
+    apiKey: ${SONARCLOUD_TOKEN}
 
   proxy:
     '/circleci/api':
       target: https://circleci.com/api/v1.1
       headers:
         Circle-Token: ${CIRCLECI_TOKEN}
+
 
 proxy:
   ### Example for how to add a proxy endpoint for the frontend.
@@ -104,10 +105,9 @@ catalog:
         - allow: [User, Group]
 
     - type: url
-      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
+      target: https://github.com/ksunilkumar007/backstage-templates/blob/main/template.yaml
       rules:
-        - allow: [Template]
-
+        - allow: [ Template ]
     ## Uncomment these lines to add more example data
     # - type: url
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
