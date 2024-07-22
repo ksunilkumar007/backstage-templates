@@ -134,9 +134,9 @@ skhobrag@Sunils-MacBook-Pro backstage % export CIRCLECI_TOKEN=<YOUR_CIRCLECI_TOK
 ### Provide Configuration and Install Plugins
 
 ```bash
-skhobrag@Sunils-MacBook-Pro backstage % export GITHUB_TOKEN=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
-skhobrag@Sunils-MacBook-Pro backstage % export SONARCLOUD_TOKEN=57dba4eea654b5e87ebc08ea297216ae848f2517
-skhobrag@Sunils-MacBook-Pro backstage % export CIRCLECI_TOKEN=CCIPAT_SjDFpmjQFdGc1fYkmzw5Xi_61d6356ec8899131ad086c6f20a337ce5a7141a7
+skhobrag@Sunils-MacBook-Pro backstage % export GITHUB_TOKEN=github_pat_11AFTL44I0Hz0OG4AQ7HCx_ <REDACTED> hh5QFYyHkf62OHQQ4PTJlDbQRQ81
+skhobrag@Sunils-MacBook-Pro backstage % export SONARCLOUD_TOKEN=57dba4eea654 <REDACTED> ea297216ae848f2517
+skhobrag@Sunils-MacBook-Pro backstage % export CIRCLECI_TOKEN=CCIPAT_SjDFpmjQFdGc1 <REDACTED> c8899131ad086c6f20a337ce5a7141a7
 skhobrag@Sunils-MacBook-Pro backstage % 
 
 ```
@@ -512,4 +512,9 @@ skhobrag@Sunils-MacBook-Pro backstage1 %
 
 ```
 
+# issues Found 
+
+1 make the repo public , private repo the tiles does not show 
+2 publish fails , the token for owner linus , not found 
+3 
 
