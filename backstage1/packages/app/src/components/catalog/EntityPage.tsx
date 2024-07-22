@@ -1,5 +1,10 @@
 import React from 'react';
 import { Button, Grid } from '@material-ui/core';
+import { EntitySonarQubeCard } from '@backstage-community/plugin-sonarqube';
+import {
+    EntityCircleCIContent,
+    isCircleCIAvailable,
+} from '@circleci/backstage-plugin';
 import {
   EntityApiDefinitionCard,
   EntityConsumedApisCard,
@@ -73,7 +78,9 @@ const cicdContent = (
         <EntityGithubActionsContent />
       </EntitySwitch.Case>
      */}
-
+    <EntitySwitch.Case if={isCircleCIAvailable}>
+        <EntityCircleCIContent />
+    </EntitySwitch.Case>
     <EntitySwitch.Case>
       <EmptyState
         title="No CI/CD available for this entity"
@@ -130,7 +137,9 @@ const overviewContent = (
     <Grid item md={6} xs={12}>
       <EntityCatalogGraphCard variant="gridItem" height={400} />
     </Grid>
-
+    <Grid item md={6}>
+      <EntitySonarQubeCard variant="gridItem" />
+    </Grid>
     <Grid item md={4} xs={12}>
       <EntityLinksCard />
     </Grid>
